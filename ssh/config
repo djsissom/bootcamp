@@ -1,0 +1,24 @@
+Host accre
+	HostName vmplogin.accre.vanderbilt.edu
+	User putyourusernamehere
+	ForwardX11 yes
+	ForwardX11Trusted yes
+
+Host vpac01
+	HostName vpac01.phy.vanderbilt.edu
+
+Host vpac02
+	HostName vpac02.phy.vanderbilt.edu
+
+Host vpac*
+	User putyourusernamehere
+	ForwardX11 yes
+	ForwardX11Trusted yes
+
+Host *
+	AddressFamily inet
+	ServerAliveInterval 30
+	ServerAliveCountMax 12000
+	ForwardX11 no
+	ForwardX11Trusted no
+
