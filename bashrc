@@ -239,7 +239,8 @@ case "$host" in
 	( osx			)
 		alias ls='ls -G'
 		alias top='top -o cpu'
-		alias ssh 'if [[ `ssh-add -l` == "The agent has no identities." ]]; then ssh-add -t 28800; fi && ssh'
+		alias ssh='if [[ `ssh-add -l` == "The agent has no identities." ]]; then ssh-add -t 28800; fi && ssh'
+		alias scp='if [[ `ssh-add -l` == "The agent has no identities." ]]; then ssh-add -t 28800; fi && scp'
 		;;
 esac
 
